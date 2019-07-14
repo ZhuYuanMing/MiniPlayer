@@ -10,6 +10,7 @@ before_install:
 install:
   - sudo apt-get install -qq g++-7
   - wget -c http://download.qt.io/official_releases/qt/5.13/5.13.0/qt-opensource-linux-x64-5.13.0.run
+  - echo ${PWD}
   - sudo chmod +x qt-opensource-linux-x64-5.13.0.run
   - sudo chmod +x ./extract-qt-installer ./install-qt
   - sudo ./install-qt
